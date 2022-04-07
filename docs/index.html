@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZN_BLOG</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  
+ 
+</head>
+<body>
+  <nav>
+      <a href="#/">EN</a>
+      <a href="#/zh-cn/">中文</a>
+  </nav>
+  <div id="app">正在加载，请稍侯...</div>
+  <script>
+    window.$docsify = {
+      name: 'ZN-BLOG',
+      repo: '',
+      loadNavbar: true,
+     
+
+   
+      homepage:'README.md',
+      mergeNavbar: true,
+      //autoHeader: true,
+      auto2top: true,//切换页面后是否自动跳转到页面顶部
+      coverpage: ['/', '/zh-cn/'],
+      subMaxLevel: 4,
+      maxLevel: 5,
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      pagination: {
+        previousText: 'PREVIOUS',
+        nextText: 'NEXT',
+        crossChapter: true
+      },
+
+      plantuml: {
+        skin: 'default',
+      },
+
+    }
+    window.$docsify.loadSidebar = true;
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-typescript.min.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'docsifyjs/Lobby'
+      };
+      </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+  <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+</body>
+</html>
